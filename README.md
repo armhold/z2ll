@@ -1,8 +1,4 @@
-# z2ll
-
-Quick command line tool for looking up lat,long for a given zip code.
-
-Zipcodes database courtesy of [federalgovernmentzipcodes.us](http://federalgovernmentzipcodes.us)
+# z2ll - a quick command line tool for looking up lat,long for a given zip code.
 
 ## Installation
 
@@ -13,7 +9,6 @@ Installing a stand-alone binary relies on [packr](https://github.com/gobuffalo/p
 
 packr is used to generate the `a_zip2latlong-packr.go` source from the  
 `assets/free-zipcode-database.csv` file, and thus bundle it into the binary.
-
 
 So install packr if you don't already have it:
 
@@ -35,3 +30,7 @@ packr && go install ./cmd/z2ll
 $ z2ll 44120
 41.470000,-81.670000
 ```
+
+### Credits
+
+Zipcodes database courtesy of [federalgovernmentzipcodes.us](http://federalgovernmentzipcodes.us)
