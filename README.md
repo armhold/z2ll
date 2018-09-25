@@ -6,6 +6,9 @@ Zipcodes database courtesy of [federalgovernmentzipcodes.us](http://federalgover
 
 ## Installation
 
+zip2latlong uses Go module support, so [Go 1.11](https://blog.golang.org/go1.11) 
+is required to build.
+
 Installing a stand-alone binary relies on [packr](https://github.com/gobuffalo/packr).
 
 packr is used to generate the `a_zip2latlong-packr.go` source from the  
@@ -24,6 +27,6 @@ packr && go install ./cmd/z2ll
 ### Usage
 
 ```bash
-z2ll 44120
+$ z2ll 44120
 41.470000,-81.670000
 ```
