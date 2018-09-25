@@ -14,9 +14,14 @@ Installing a stand-alone binary relies on [packr](https://github.com/gobuffalo/p
 packr is used to generate the `a_zip2latlong-packr.go` source from the  
 `assets/free-zipcode-database.csv` file, and thus bundle it into the binary.
 
+
+So install packr if you don't already have it:
+
 ```bash
 go get -u https://github.com/gobuffalo/packr
 ```
+
+Then you can build and install the z2ll binary:
 
 ```bash
 git clone https://github.com/armhold/zip2latlong
