@@ -6,12 +6,18 @@ Zipcodes database courtesy of [federalgovernmentzipcodes.us](http://federalgover
 
 ## Installation
 
-Installing a stand-alone binary relies on [packr](https://github.com/gobuffalo/packr). packr
-is used to generate the `a_zip2latlong-packr.go` source from the  `assets/free-zipcode-database.csv`
-file, and thus bundle it into the binary.
+Installing a stand-alone binary relies on [packr](https://github.com/gobuffalo/packr).
+
+packr is used to generate the `a_zip2latlong-packr.go` source from the  
+`assets/free-zipcode-database.csv` file, and thus bundle it into the binary.
 
 ```bash
 go get -u https://github.com/gobuffalo/packr
+```
+
+```bash
+git clone https://github.com/armhold/zip2latlong
+cd zip2latlong
 packr && go install ./cmd/z2ll
 ```
 
