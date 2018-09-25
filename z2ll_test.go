@@ -16,7 +16,17 @@ func TestLookupZip(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	expectedZip := ZipCode{Code: "44120", City: "SHAKER HTS", Lat: 41.47, Long: -81.67}
+	expectedZip := ZipCode{
+		Code:         "44120",
+		City:         "SHAKER HTS",
+		State:        "OH",
+		WorldRegion:  "NA",
+		Country:      "US",
+		LocationText: "Shaker Hts, OH",
+		Location:     "NA-US-OH-SHAKER HTS",
+		Lat:          41.47,
+		Long:         -81.67,
+	}
 
 	if !reflect.DeepEqual(expectedZip, gotZip) {
 		t.Errorf("expected: %+v, got: %+v", expectedZip, gotZip)
