@@ -1,4 +1,4 @@
-# zip2latlong
+# z2ll
 
 Quick command line tool for looking up lat,long for a given zip code.
 
@@ -6,7 +6,7 @@ Zipcodes database courtesy of [federalgovernmentzipcodes.us](http://federalgover
 
 ## Installation
 
-zip2latlong uses Go module support, so [Go 1.11](https://blog.golang.org/go1.11) 
+z2ll uses Go module support, so [Go 1.11](https://blog.golang.org/go1.11) 
 is required to build.
 
 Installing a stand-alone binary relies on [packr](https://github.com/gobuffalo/packr).
@@ -24,8 +24,8 @@ go get -u https://github.com/gobuffalo/packr
 Then you can build and install the z2ll binary:
 
 ```bash
-git clone https://github.com/armhold/zip2latlong
-cd zip2latlong
+git clone https://github.com/armhold/z2ll
+cd z2ll
 packr && go install ./cmd/z2ll
 ```
 
