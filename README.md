@@ -1,4 +1,4 @@
-# z2ll - a quick command line tool for looking up lat,long for a given zip code.
+## z2ll - a quick command line tool for looking up lat,long for a given zip code.
 
 ## Installation
 
