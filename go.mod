@@ -1,4 +1,4 @@
-module github.com/armhold/zip2latlong
+module github.com/armhold/z2ll
 
 require (
 	github.com/gobuffalo/packr v1.13.7

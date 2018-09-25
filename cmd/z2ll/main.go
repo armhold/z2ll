@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/armhold/zip2latlong"
+	"github.com/armhold/z2ll"
 	"github.com/pkg/errors"
 	"os"
 )
@@ -14,7 +14,7 @@ func main() {
 
 	zipCode := os.Args[1]
 
-	l, err := zip2latlong.NewLocator()
+	l, err := z2ll.NewLocator()
 	if err != nil {
 		die(err)
 	}
