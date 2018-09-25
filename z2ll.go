@@ -1,4 +1,4 @@
-package zip2latlong
+package z2ll
 
 import (
 	"encoding/csv"
